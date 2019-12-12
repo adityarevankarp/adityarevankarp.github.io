@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>photogallary</title>
+</head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+	<ul>
+  <li><a class="active" href="C:\Users\win10\Desktop\project sadhana\sadhcontackinfo.html">contact info</a></li>
+  <li><a href="C:\Users\win10\Desktop\project sadhana\sadhphotosgal.html">photos</a></li>
+  <li><a href="C:\Users\win10\Desktop\project sadhana\sadhcourses.html">courses</a></li>
+  <li><a href="C:\Users\win10\Desktop\project sadhana\sadhresults.html">result</a></li>
+  <li><a href="C:\Users\win10\Desktop\project sadhana\sadvision2.html">vISION</a></li>
+</ul>
+	<h1>PHOTO GALLARY</h1>
+
+	<h2 class="center">Slideshow</h2>
+
+<div class="display-container">
+  <img class="mySlides" src="sadhanapic.jpg" style="width:100%">
+  <img class="mySlides" src="vision.jpg" style="width:100%">
+  <img class="mySlides" src="results.jpg" style="width:100%">
+  <img class="mySlides" src="courses.jpg" style="width:100%">
+
+  <button class="display-left" onclick="plusDivs(-1)">;</button>
+  <button class="display-right" onclick="plusDivs(1)">&#10095;</button>
+</div>
+
+</body>
+<script>
+var slideIndex = 1;
+showDivs(slideIndex);
+
+function plusDivs(n) {
+  showDivs(slideIndex += n);
+}
+
+function showDivs(n) {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  if (n > x.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = x.length}
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";  
+  }
+  x[slideIndex-1].style.display = "block";  
+}
+</script>
+
+<style>
+	.mySlides {display:none;}
+	ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover {
+  background-color: #111;
+}
+
+	h1
+	{
+		font: 'Raleway', sans-serif;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: .2em;
+        font-size: 500%;
+    color: #FFFFFF;
+    background-color: #000000 ;
+	}
+
+	body
+	{
+		background-image: url(sadhanapic.jpg);
+		
+		background-position: center;
+		background-attachment: fixed;
+		background-repeat: no-repeat;
+		background-size: cover;
+
+
+		
+        
+	}
+	img
+	{
+		width: 200%;
+	}
+	.bg
+	{
+		border-bottom: 10px solid pink;
+	}
+</style>
+<script>
+	
+</script>
+</body>
+</html>
